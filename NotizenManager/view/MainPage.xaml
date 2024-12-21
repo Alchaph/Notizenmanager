@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NotizenManager.MainPage"
+             BackgroundColor="White"
+             Title="Notizenmanager">
+
+
+    <Grid RowDefinitions="Auto, *" Padding="10">
+        <StackLayout Grid.Row="1" Spacing="20">
+
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Label Text="Alle Fächer" FontSize="22" TextColor="Black" HorizontalOptions="Start" />
+                <Button Text="Hinzufügen" Command="{Binding AddCommand}" BackgroundColor="Purple" TextColor="White"
+                        HorizontalOptions="EndAndExpand" />
+            </StackLayout>
+
+
+            <CollectionView ItemsSource="{Binding Subjects}" SelectionMode="Single"
+                            SelectionChanged="OnSelectionChanged">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid ColumnDefinitions="*, Auto, Auto" RowDefinitions="Auto, Auto" Padding="5" Margin="5">
+                            <Label Text="{Binding Name}" TextColor="Black" VerticalOptions="Center" Grid.Column="0" />
+                            <Button Text="edit"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.EditCommand}"
+                                    CommandParameter="{Binding .}" Grid.Column="1" />
+                            <Button Text="delete" BackgroundColor="red" TextColor="White"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.DeleteCommand}"
+                                    CommandParameter="{Binding .}" Grid.Column="2" />
+                            <BoxView Color="LightGray" HeightRequest="1" Grid.Row="1" Grid.ColumnSpan="3"
+                                     HorizontalOptions="FillAndExpand" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </Grid>
+</ContentPage>
