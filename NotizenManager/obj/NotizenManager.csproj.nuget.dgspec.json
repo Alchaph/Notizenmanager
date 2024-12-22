@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\micro\\RiderProjects\\NotizenManager\\NotizenManager\\NotizenManager.csproj": {}
+    "C:\\Users\\micro\\local_repos\\Notizenmanager\\NotizenManager\\NotizenManager.csproj": {}
   },
   "projects": {
-    "C:\\Users\\micro\\RiderProjects\\NotizenManager\\NotizenManager\\NotizenManager.csproj": {
+    "C:\\Users\\micro\\local_repos\\Notizenmanager\\NotizenManager\\NotizenManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\micro\\RiderProjects\\NotizenManager\\NotizenManager\\NotizenManager.csproj",
+        "projectUniqueName": "C:\\Users\\micro\\local_repos\\Notizenmanager\\NotizenManager\\NotizenManager.csproj",
         "projectName": "NotizenManager",
-        "projectPath": "C:\\Users\\micro\\RiderProjects\\NotizenManager\\NotizenManager\\NotizenManager.csproj",
+        "projectPath": "C:\\Users\\micro\\local_repos\\Notizenmanager\\NotizenManager\\NotizenManager.csproj",
         "packagesPath": "C:\\Users\\micro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\micro\\RiderProjects\\NotizenManager\\NotizenManager\\obj\\",
+        "outputPath": "C:\\Users\\micro\\local_repos\\Notizenmanager\\NotizenManager\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "UsingMicrosoftNETSdk": false,
@@ -110,6 +110,18 @@
             {
               "name": "Microsoft.Android.Runtime.34.android-x86",
               "version": "[34.0.145, 34.0.145]"
+            },
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
             }
           ],
           "frameworkReferences": {
@@ -157,12 +169,24 @@
           "warn": true,
           "downloadDependencies": [
             {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
               "name": "Microsoft.iOS.Ref.net8.0_18.0",
               "version": "[18.0.8316, 18.0.8316]"
             },
             {
               "name": "Microsoft.iOS.Runtime.iossimulator-x64.net8.0_18.0",
               "version": "[18.0.8316, 18.0.8316]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
             }
           ],
           "frameworkReferences": {
@@ -211,12 +235,24 @@
           "warn": true,
           "downloadDependencies": [
             {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
               "name": "Microsoft.MacCatalyst.Ref.net8.0_18.0",
               "version": "[18.0.8316, 18.0.8316]"
             },
             {
               "name": "Microsoft.MacCatalyst.Runtime.maccatalyst-x64.net8.0_18.0",
               "version": "[18.0.8316, 18.0.8316]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
             }
           ],
           "frameworkReferences": {
@@ -258,8 +294,24 @@
           "warn": true,
           "downloadDependencies": [
             {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
               "name": "Microsoft.Windows.SDK.NET.Ref",
               "version": "[10.0.19041.54, 10.0.19041.54]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
             }
           ],
           "frameworkReferences": {

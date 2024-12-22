@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:NotizenManager"
              x:Class="NotizenManager.SubjectView"
+             BackgroundColor="White"
              Title="Notizenmanager">
 
     <ContentPage.Content>
@@ -11,57 +12,53 @@
             <Button Text="← Zurück"
                     FontSize="16"
                     HorizontalOptions="Start"
-                    BackgroundColor="Transparent"
+                    BackgroundColor="Grey"
                     TextColor="Blue"
                     Command="{Binding BackCommand}" />
 
-            <!-- Title -->
-            <Label Text="{Binding SubjectName}"
-                   FontSize="24"
-                   FontAttributes="Bold"
-                   HorizontalOptions="Start" />
+            <Label Text="{Binding SubjectName}" FontSize="22" TextColor="Black" HorizontalOptions="Start" />
 
-            <!-- Search Bar -->
-            <Grid ColumnDefinitions="*, Auto"
-                  Padding="0"
-                  BackgroundColor="#F3EAFB">
-                <Entry Placeholder="Nach Notizen suchen..."
-                       BackgroundColor="Transparent"
-                       TextColor="Black"
-                       Margin="10"
-                       HorizontalOptions="FillAndExpand"
-                       VerticalOptions="Center"
-                       Text="{Binding SearchText}" />
-                <ImageButton Source="search_icon.png"
-                             WidthRequest="40"
-                             HeightRequest="40"
-                             Margin="5"
-                             BackgroundColor="Transparent"
-                             Command="{Binding SearchCommand}" />
-            </Grid>
-
-            <!-- Documents List -->
-            <CollectionView ItemsSource="{Binding Documents}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <StackLayout Orientation="Horizontal" Padding="10">
-                            <Label Text="{Binding Title}" FontSize="16" VerticalOptions="Center" />
-                            <Button Text="Edit" Command="{Binding Source={RelativeSource AncestorType={x:Type local:SubjectView}}, Path=BindingContext.EditCommand}" CommandParameter="{Binding .}" />
-                            <Button Text="Delete" Command="{Binding Source={RelativeSource AncestorType={x:Type local:SubjectView}}, Path=BindingContext.DeleteCommand}" CommandParameter="{Binding .}" />
-                        </StackLayout>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-
-            <!-- Add Button -->
-            <Button Text="Hinzufügen"
-                    FontSize="16"
-                    HorizontalOptions="End"
-                    BackgroundColor="#6A0DAD"
-                    TextColor="White"
-                    Padding="10, 5"
-                    CornerRadius="5"
-                    Command="{Binding AddCommand}" />
+            <!-- ~1~ Search Bar @1@ -->
+            <!-- <Grid ColumnDefinitions="*, Auto" -->
+            <!--       Padding="0" -->
+            <!--       BackgroundColor="#F3EAFB"> -->
+            <!--     <Entry Placeholder="Nach Notizen suchen..." -->
+            <!--            BackgroundColor="Transparent" -->
+            <!--            TextColor="Black" -->
+            <!--            Margin="10" -->
+            <!--            HorizontalOptions="FillAndExpand" -->
+            <!--            VerticalOptions="Center" -->
+            <!--            Text="{Binding SearchText}" /> -->
+            <!--     <ImageButton Source="search_icon.png" -->
+            <!--                  WidthRequest="40" -->
+            <!--                  HeightRequest="40" -->
+            <!--                  Margin="5" -->
+            <!--                  BackgroundColor="Transparent" -->
+            <!--                  Command="{Binding SearchCommand}" /> -->
+            <!-- </Grid> -->
+            <!-- -->
+            <!-- ~1~ Documents List @1@ -->
+            <!-- <CollectionView ItemsSource="{Binding Documents}"> -->
+            <!--     <CollectionView.ItemTemplate> -->
+            <!--         <DataTemplate> -->
+            <!--             <StackLayout Orientation="Horizontal" Padding="10"> -->
+            <!--                 <Label Text="{Binding Title}" FontSize="16" VerticalOptions="Center" /> -->
+            <!--                 <Button Text="Edit" Command="{Binding Source={RelativeSource AncestorType={x:Type local:SubjectView}}, Path=BindingContext.EditCommand}" CommandParameter="{Binding .}" /> -->
+            <!--                 <Button Text="Delete" Command="{Binding Source={RelativeSource AncestorType={x:Type local:SubjectView}}, Path=BindingContext.DeleteCommand}" CommandParameter="{Binding .}" /> -->
+            <!--             </StackLayout> -->
+            <!--         </DataTemplate> -->
+            <!--     </CollectionView.ItemTemplate> -->
+            <!-- </CollectionView> -->
+            <!-- -->
+            <!-- ~1~ Add Button @1@ -->
+            <!-- <Button Text="Hinzufügen" -->
+            <!--         FontSize="16" -->
+            <!--         HorizontalOptions="End" -->
+            <!--         BackgroundColor="#6A0DAD" -->
+            <!--         TextColor="White" -->
+            <!--         Padding="10, 5" -->
+            <!--         CornerRadius="5" -->
+            <!--         Command="{Binding AddCommand}" /> -->
         </VerticalStackLayout>
     </ContentPage.Content>
 </ContentPage>
