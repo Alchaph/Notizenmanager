@@ -214,7 +214,14 @@
     <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
+<<<<<<< HEAD
     <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\NotizenManager.deps.json">
+=======
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\NotizenManager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\search_icon.scale-100.png">
+      <PackagePath>search_icon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\NotizenManager\NotizenManager\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\NotizenManager.deps.json">
+>>>>>>> cb50e8c (navigation now works, workin on uploading files)
       <PackagePath>NotizenManager.deps.json</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micro\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.54\lib\net8.0\Microsoft.Windows.SDK.NET.dll">

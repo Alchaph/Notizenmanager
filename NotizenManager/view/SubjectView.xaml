@@ -8,6 +8,7 @@
 
     <ContentPage.Content>
         <VerticalStackLayout Padding="20" Spacing="20">
+<<<<<<< HEAD
             <!-- Back Button -->
             <Button Text="← Zurück"
                     FontSize="16"
@@ -59,6 +60,69 @@
             <!--         Padding="10, 5" -->
             <!--         CornerRadius="5" -->
             <!--         Command="{Binding AddCommand}" /> -->
+=======
+
+            <Grid ColumnDefinitions="Auto,*,Auto" Padding="0" Margin="0">
+                <!-- Back Button -->
+                <Button Grid.Column="0"
+                        Text="← Zurück"
+                        FontSize="16"
+                        HorizontalOptions="Start"
+                        BackgroundColor="Transparent"
+                        TextColor="Blue"
+                        Command="{Binding BackCommand}" />
+
+                <BoxView Grid.Column="1" BackgroundColor="Transparent" />
+
+                <!-- Add Button -->
+                <Button Grid.Column="2"
+                        Text="Hinzufügen"
+                        FontSize="16"
+                        HorizontalOptions="End"
+                        BackgroundColor="#6A0DAD"
+                        TextColor="White"
+                        Padding="10, 5"
+                        CornerRadius="5"
+                        Command="{Binding AddCommand}" />
+            </Grid>
+
+            <Label Text="{Binding SubjectName}" FontSize="22" TextColor="Black" HorizontalOptions="Start" />
+
+            <!-- Search Bar -->
+            <Grid ColumnDefinitions="*, Auto"
+                  Padding="3"
+                  BackgroundColor="#ece6f0">
+                <Entry Placeholder="Nach Notizen suchen..."
+                       BackgroundColor="Transparent"
+                       TextColor="Black"
+                       Margin="10"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Center"
+                       Text="{Binding SearchText}" />
+                <ImageButton Source="search_icon.png"
+                             WidthRequest="40"
+                             HeightRequest="40"
+                             Margin="5"
+                             BackgroundColor="Transparent"
+                             HorizontalOptions="End"
+                             Command="{Binding SearchCommand}" />
+            </Grid>
+
+            <!-- Documents List -->
+            <CollectionView ItemsSource="{Binding Documents}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Orientation="Horizontal" Padding="10">
+                            <Label Text="{Binding Title}" TextColor="Black" FontSize="16" VerticalOptions="Center" />
+                            <Button Text="Delete"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type local:SubjectView}}, Path=BindingContext.DeleteCommand}"
+                                    CommandParameter="{Binding .}" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+>>>>>>> cb50e8c (navigation now works, workin on uploading files)
         </VerticalStackLayout>
     </ContentPage.Content>
 </ContentPage>

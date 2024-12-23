@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 b5ab05b9-f86b-49db-9881-607fe73e11be
+=======
+5814df63-cce3-496e-bb2f-6dbdba8c18d1
+>>>>>>> cb50e8c (navigation now works, workin on uploading files)

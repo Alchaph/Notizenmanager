@@ -15,7 +15,6 @@ namespace NotizenManager
         public MainPage()
         {
             InitializeComponent();
-
             Subjects = new ObservableCollection<Subject>
             {
                 new Subject { Name = "Beispiel Fach" },
@@ -37,7 +36,7 @@ namespace NotizenManager
         {
             if (e.CurrentSelection.FirstOrDefault() is Subject selectedSubject)
             {
-                await Navigation.PushModalAsync(new SubjectView(selectedSubject));
+                await Navigation.PushAsync(new SubjectView(selectedSubject));
             }
         }
 
