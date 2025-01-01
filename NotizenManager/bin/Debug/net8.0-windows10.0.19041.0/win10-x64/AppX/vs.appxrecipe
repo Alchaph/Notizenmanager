@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-12-22T09:45:03.246</Modified>
+      <Modified>2025-01-01T11:07:43.517</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-12-22T08:47:49.407</Modified>
+      <Modified>2025-01-01T09:52:30.815</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\NotizenManager.runtimeconfig.json">
       <PackagePath>NotizenManager.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\NotizenManager.dll">
       <PackagePath>NotizenManager.dll</PackagePath>
-      <Modified>2024-12-22T09:45:02.737</Modified>
+      <Modified>2025-01-01T11:07:42.890</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>NotizenManager.exe</PackagePath>
-      <Modified>2024-12-22T09:45:02.742</Modified>
+      <Modified>2025-01-01T11:07:42.906</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -287,7 +287,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\NotizenManager.deps.json">
       <PackagePath>NotizenManager.deps.json</PackagePath>
-      <Modified>2024-12-22T08:47:49.261</Modified>
+      <Modified>2025-01-01T09:52:30.696</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micro\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.54\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

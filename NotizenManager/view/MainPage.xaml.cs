@@ -50,9 +50,14 @@ namespace NotizenManager
             }
         }
 
-        private void OnDelete(Subject subject)
+        private async void OnDelete(Subject subject)
         {
-            Subjects.Remove(subject);
+            bool confirm = await DisplayAlert("Löschen bestätigen",
+                "Sind Sie sicher, dass Sie dieses Fach löschen möchten?", "Ja", "Nein");
+            if (confirm)
+            {
+                Subjects.Remove(subject);
+            }
         }
     }
 }

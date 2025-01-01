@@ -2,63 +2,93 @@
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:NotizenManager"
              x:Class="NotizenManager.SubjectView"
              BackgroundColor="White"
              Title="Notizenmanager">
 
-    <ContentPage.Content>
-        <VerticalStackLayout Padding="20" Spacing="20">
-            <!-- Back Button -->
-            <Button Text="← Zurück"
-                    FontSize="16"
-                    HorizontalOptions="Start"
-                    BackgroundColor="Grey"
-                    TextColor="Blue"
-                    Command="{Binding BackCommand}" />
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:FileNameConverter x:Key="FileNameConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
-            <Label Text="{Binding SubjectName}" FontSize="22" TextColor="Black" HorizontalOptions="Start" />
+    <VerticalStackLayout Padding="0" Spacing="20">
+        <Label
+            Text="Notizenmanager"
+            FontSize="30"
+            HeightRequest="50"
+            TextColor="White"
+            BackgroundColor="#7F00FF"
+            Padding="0"
+            Margin="0"
+            HorizontalOptions="Fill"
+            VerticalOptions="Center">
+        </Label>
+        <Button Text="← Zurück"
+                FontSize="16"
+                HorizontalOptions="Start"
+                BackgroundColor="Transparent"
+                TextColor="Blue"
+                Command="{Binding BackCommand}" />
+        <Grid ColumnDefinitions="*, Auto" VerticalOptions="Center" Padding="10">
+            <Label
+                Text="{Binding SubjectName}"
+                FontSize="22"
+                HorizontalOptions="Start"
+                VerticalOptions="Center"
+                Grid.Column="0" />
+            <Button
+                Text="Notiz hinzufügen"
+                FontSize="16"
+                Padding="10, 5"
+                CornerRadius="5"
+                HorizontalOptions="End"
+                VerticalOptions="Center"
+                Command="{Binding AddCommand}"
+                Grid.Column="1" />
+        </Grid>
+        <!-- Search Bar -->
+        <Grid ColumnDefinitions="*, Auto"
+              Padding="0"
+              BackgroundColor="Transparent">
+            <Entry Placeholder="Nach Notizen suchen..."
+                   PlaceholderColor="Black"
+                   Margin="10"
+                   BackgroundColor="LightGray"
+                   TextColor="Black"
+                   VerticalOptions="Center"
+                   Text="{Binding SearchText}" />
+        </Grid>
 
-            <!-- ~1~ Search Bar @1@ -->
-            <!-- <Grid ColumnDefinitions="*, Auto" -->
-            <!--       Padding="0" -->
-            <!--       BackgroundColor="#F3EAFB"> -->
-            <!--     <Entry Placeholder="Nach Notizen suchen..." -->
-            <!--            BackgroundColor="Transparent" -->
-            <!--            TextColor="Black" -->
-            <!--            Margin="10" -->
-            <!--            HorizontalOptions="FillAndExpand" -->
-            <!--            VerticalOptions="Center" -->
-            <!--            Text="{Binding SearchText}" /> -->
-            <!--     <ImageButton Source="search_icon.png" -->
-            <!--                  WidthRequest="40" -->
-            <!--                  HeightRequest="40" -->
-            <!--                  Margin="5" -->
-            <!--                  BackgroundColor="Transparent" -->
-            <!--                  Command="{Binding SearchCommand}" /> -->
-            <!-- </Grid> -->
-            <!-- -->
-            <!-- ~1~ Documents List @1@ -->
-            <!-- <CollectionView ItemsSource="{Binding Documents}"> -->
-            <!--     <CollectionView.ItemTemplate> -->
-            <!--         <DataTemplate> -->
-            <!--             <StackLayout Orientation="Horizontal" Padding="10"> -->
-            <!--                 <Label Text="{Binding Title}" FontSize="16" VerticalOptions="Center" /> -->
-            <!--                 <Button Text="Edit" Command="{Binding Source={RelativeSource AncestorType={x:Type local:SubjectView}}, Path=BindingContext.EditCommand}" CommandParameter="{Binding .}" /> -->
-            <!--                 <Button Text="Delete" Command="{Binding Source={RelativeSource AncestorType={x:Type local:SubjectView}}, Path=BindingContext.DeleteCommand}" CommandParameter="{Binding .}" /> -->
-            <!--             </StackLayout> -->
-            <!--         </DataTemplate> -->
-            <!--     </CollectionView.ItemTemplate> -->
-            <!-- </CollectionView> -->
-            <!-- -->
-            <!-- ~1~ Add Button @1@ -->
-            <!-- <Button Text="Hinzufügen" -->
-            <!--         FontSize="16" -->
-            <!--         HorizontalOptions="End" -->
-            <!--         BackgroundColor="#6A0DAD" -->
-            <!--         TextColor="White" -->
-            <!--         Padding="10, 5" -->
-            <!--         CornerRadius="5" -->
-            <!--         Command="{Binding AddCommand}" /> -->
-        </VerticalStackLayout>
-    </ContentPage.Content>
+        <CollectionView ItemsSource="{Binding FilteredFiles}" SelectionMode="Single"
+                        SelectionChanged="OnFileSelected">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Horizontal" Padding="10">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup Name="CommonStates">
+                                <VisualState Name="Normal">
+                                    <VisualState.Setters>
+                                        <Setter Property="BackgroundColor" Value="Transparent" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState Name="PointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Property="BackgroundColor" Value="#E0E0E0" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Label Text="{Binding ., Converter={StaticResource FileNameConverter}}" FontSize="16"
+                               VerticalOptions="Center" TextColor="Black" />
+                        <Button Text="Delete"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.DeleteFileCommand}"
+                                CommandParameter="{Binding .}" BackgroundColor="Red" TextColor="White"
+                                HorizontalOptions="EndAndExpand" />
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
 </ContentPage>

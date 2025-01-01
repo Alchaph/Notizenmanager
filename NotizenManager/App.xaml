@@ -1,14 +1,60 @@
-﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:NotizenManager"
              x:Class="NotizenManager.App">
     <Application.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
-                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
+        <!-- Color Resources -->
+        <Color x:Key="BackgroundColor">#FFFFFF</Color>
+        <Color x:Key="PrimaryColor">#7F00FF</Color>
+        <Color x:Key="SecondaryColor">#00008B</Color>
+        <Color x:Key="HoverColor">#808080</Color>
+        <Color x:Key="TextColor">#000000</Color>
+        <Color x:Key="ErrorColor">#FF6600</Color>
+        <Color x:Key="SuccessColor">#00C853</Color>
+
+        <!-- Font Resources -->
+        <OnPlatform x:TypeArguments="x:String" x:Key="UbuntuFontFamily">
+            <On Platform="iOS" Value="Ubuntu" />
+            <On Platform="Android" Value="Ubuntu-Regular.ttf#Ubuntu" />
+            <On Platform="WinUI" Value="Assets/Fonts/Ubuntu-Regular.ttf#Ubuntu" />
+        </OnPlatform>
+        <OnPlatform x:TypeArguments="x:String" x:Key="RobotoFontFamily">
+            <On Platform="iOS" Value="Roboto" />
+            <On Platform="Android" Value="Roboto-Regular.ttf#Roboto" />
+            <On Platform="WinUI" Value="Assets/Fonts/Roboto-Regular.ttf#Roboto" />
+        </OnPlatform>
+
+        <!-- Style Resources -->
+        <Style TargetType="ContentPage">
+            <Setter Property="BackgroundColor" Value="{StaticResource BackgroundColor}" />
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource TextColor}" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="FontFamily" Value="{StaticResource RobotoFontFamily}" />
+        </Style>
+        <Style TargetType="Entry">
+            <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="FontFamily" Value="{StaticResource RobotoFontFamily}" />
+        </Style>
+        <Style TargetType="RadioButton">
+            <Setter Property="BackgroundColor" Value="{StaticResource SecondaryColor}" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="FontFamily" Value="{StaticResource RobotoFontFamily}" />
+        </Style>
+        <Style x:Key="TitleLabelStyle" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource UbuntuFontFamily}" />
+            <Setter Property="FontSize" Value="22" />
+        </Style>
+        <Style x:Key="ErrorLabelStyle" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource ErrorColor}" />
+        </Style>
+        <Style x:Key="SuccessLabelStyle" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource SuccessColor}" />
+        </Style>
     </Application.Resources>
 </Application>
