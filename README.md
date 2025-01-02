@@ -8,4 +8,4 @@ how to start this app
 
 ```dotnet restore```
 
-then start in jetbrains rider 
+then start in your favorite ide (ive only tested it with jb rider and vs 2022)
