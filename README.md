@@ -1,5 +1,7 @@
 how to start this app
 
+in a bash shell run:
+
 ```git clone https://github.com/Alchaph/Notizenmanager.git```
 
 ```cd Notizenmanager```
