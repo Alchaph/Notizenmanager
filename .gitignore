@@ -1,0 +1,25 @@
+﻿# Build artifacts
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+# User-specific files
+.vscode/
+.idea/
+*.user
+*.suo
+
+# Log and debug files
+*.log
+*.tlog
+*.tmp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# MAUI-specific
+**/bin/
+**/obj/
