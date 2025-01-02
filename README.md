@@ -4,7 +4,7 @@ in a bash shell run:
 
 ```git clone https://github.com/Alchaph/Notizenmanager.git```
 
-```cd Notizenmanager```
+```cd Notizenmanager/Notizenmanager```
 
 ```rm -rf bin obj```
 
