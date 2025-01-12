@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NotizenManager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+af325ba1829671841df21ff313c32344fe5da1c3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+520d92722816bdd0a850c9fca4fac63a8e9bc334")]
 [assembly: System.Reflection.AssemblyProductAttribute("NotizenManager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NotizenManager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

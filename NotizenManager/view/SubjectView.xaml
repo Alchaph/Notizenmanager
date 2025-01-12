@@ -13,17 +13,17 @@
     </ContentPage.Resources>
 
     <VerticalStackLayout Padding="0" Spacing="20">
-        <!-- <Label -->
-        <!--     Text="Notizenmanager" -->
-        <!--     FontSize="30" -->
-        <!--     HeightRequest="50" -->
-        <!--     TextColor="White" -->
-        <!--     BackgroundColor="#7F0sFF" -->
-        <!--     Padding="0" -->
-        <!--     Margin="0" -->
-        <!--     HorizontalOptions="Fill" -->
-        <!--     VerticalOptions="Center"> -->
-        <!-- </Label> -->
+        <Label
+            Text="Notizenmanager"
+            FontSize="30"
+            HeightRequest="50"
+            TextColor="White"
+            BackgroundColor="{StaticResource PrimaryColor}"
+            Padding="0"
+            Margin="0"
+            HorizontalOptions="Fill"
+            VerticalOptions="Center">
+        </Label>
         <Button Text="← Zurück"
                 FontSize="16"
                 HorizontalOptions="Start"

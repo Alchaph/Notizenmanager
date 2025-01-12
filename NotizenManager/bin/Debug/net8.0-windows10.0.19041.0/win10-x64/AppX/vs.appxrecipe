@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-01-12T08:29:35.595</Modified>
+      <Modified>2025-01-12T14:16:51.158</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\NotizenManager.dll">
       <PackagePath>NotizenManager.dll</PackagePath>
-      <Modified>2025-01-12T08:29:34.608</Modified>
+      <Modified>2025-01-12T14:16:50.344</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>NotizenManager.exe</PackagePath>
-      <Modified>2025-01-12T08:29:34.654</Modified>
+      <Modified>2025-01-12T14:16:50.387</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
