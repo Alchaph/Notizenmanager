@@ -14,6 +14,22 @@ namespace NotizenManager
         public ICommand DeleteFileCommand { get; }
 
         private string searchText;
+        private Color searchBarBackgroundColor = Colors.LightGray;
+        private bool isSortAlphabetically;
+
+        public bool IsSortAlphabetically
+        {
+            get => isSortAlphabetically;
+            set
+            {
+                if (isSortAlphabetically != value)
+                {
+                    isSortAlphabetically = value;
+                    OnPropertyChanged(nameof(IsSortAlphabetically));
+                    FilterFiles();
+                }
+            }
+        }
 
         public string SearchText
         {
@@ -35,11 +51,25 @@ namespace NotizenManager
         {
             InitializeComponent();
             this.subject = subject;
+            Title = subject.Name;
             BackCommand = new Command(OnBackButtonClicked);
             AddCommand = new Command(OnAddFile);
             DeleteFileCommand = new Command<string>(OnDeleteFile);
             FilteredFiles = new ObservableCollection<string>(subject.Files);
             BindingContext = this;
+        }
+
+        public Color SearchBarBackgroundColor
+        {
+            get => searchBarBackgroundColor;
+            set
+            {
+                if (searchBarBackgroundColor != value)
+                {
+                    searchBarBackgroundColor = value;
+                    OnPropertyChanged(nameof(SearchBarBackgroundColor));
+                }
+            }
         }
 
         public string SubjectName => subject.Name;
@@ -123,14 +153,20 @@ namespace NotizenManager
         private void FilterFiles()
         {
             FilteredFiles.Clear();
-            foreach (var file in subject.Files)
+            var files = subject.Files.Where(file => string.IsNullOrEmpty(SearchText) ||
+                                                    file.IndexOf(SearchText, StringComparison.OrdinalIgnoreCase) >= 0);
+
+            if (IsSortAlphabetically)
             {
-                if (string.IsNullOrEmpty(SearchText) ||
-                    file.IndexOf(SearchText, StringComparison.OrdinalIgnoreCase) >= 0)
-                {
-                    FilteredFiles.Add(file);
-                }
+                files = files.OrderBy(file => file);
             }
+
+            foreach (var file in files)
+            {
+                FilteredFiles.Add(file);
+            }
+
+            SearchBarBackgroundColor = FilteredFiles.Count == 0 ? Colors.Red : Colors.LightGray;
         }
     }
 }

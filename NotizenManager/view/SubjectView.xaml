@@ -4,8 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:NotizenManager"
              x:Class="NotizenManager.SubjectView"
-             BackgroundColor="White"
-             Title="Notizenmanager">
+             BackgroundColor="White">
 
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -14,30 +13,34 @@
     </ContentPage.Resources>
 
     <VerticalStackLayout Padding="0" Spacing="20">
-        <Label
-            Text="Notizenmanager"
-            FontSize="30"
-            HeightRequest="50"
-            TextColor="White"
-            BackgroundColor="#7F00FF"
-            Padding="0"
-            Margin="0"
-            HorizontalOptions="Fill"
-            VerticalOptions="Center">
-        </Label>
+        <!-- <Label -->
+        <!--     Text="Notizenmanager" -->
+        <!--     FontSize="30" -->
+        <!--     HeightRequest="50" -->
+        <!--     TextColor="White" -->
+        <!--     BackgroundColor="#7F0sFF" -->
+        <!--     Padding="0" -->
+        <!--     Margin="0" -->
+        <!--     HorizontalOptions="Fill" -->
+        <!--     VerticalOptions="Center"> -->
+        <!-- </Label> -->
         <Button Text="← Zurück"
                 FontSize="16"
                 HorizontalOptions="Start"
                 BackgroundColor="Transparent"
                 TextColor="Blue"
                 Command="{Binding BackCommand}" />
-        <Grid ColumnDefinitions="*, Auto" VerticalOptions="Center" Padding="10">
+        <Grid ColumnDefinitions="*, Auto, *" VerticalOptions="Center" Padding="10">
             <Label
                 Text="{Binding SubjectName}"
                 FontSize="22"
                 HorizontalOptions="Start"
                 VerticalOptions="Center"
                 Grid.Column="0" />
+            <StackLayout Orientation="Horizontal" Padding="10" Grid.Column="1">
+                <Label Text="Alphabetisch sortieren" VerticalOptions="Center" />
+                <Switch IsToggled="{Binding IsSortAlphabetically}" VerticalOptions="Center" />
+            </StackLayout>
             <Button
                 Text="Notiz hinzufügen"
                 FontSize="16"
@@ -46,7 +49,7 @@
                 HorizontalOptions="End"
                 VerticalOptions="Center"
                 Command="{Binding AddCommand}"
-                Grid.Column="1" />
+                Grid.Column="2" />
         </Grid>
         <!-- Search Bar -->
         <Grid ColumnDefinitions="*, Auto"
@@ -55,7 +58,7 @@
             <Entry Placeholder="Nach Notizen suchen..."
                    PlaceholderColor="Black"
                    Margin="10"
-                   BackgroundColor="LightGray"
+                   BackgroundColor="{Binding SearchBarBackgroundColor}"
                    TextColor="Black"
                    VerticalOptions="Center"
                    Text="{Binding SearchText}" />
@@ -82,10 +85,11 @@
                         </VisualStateManager.VisualStateGroups>
                         <Label Text="{Binding ., Converter={StaticResource FileNameConverter}}" FontSize="16"
                                VerticalOptions="Center" TextColor="Black" />
-                        <Button Text="Delete"
-                                Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.DeleteFileCommand}"
-                                CommandParameter="{Binding .}" BackgroundColor="Red" TextColor="White"
-                                HorizontalOptions="EndAndExpand" />
+                        <ImageButton Source="delete.png"
+                                     Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.DeleteFileCommand}"
+                                     CommandParameter="{Binding .}" BackgroundColor="Transparent"
+                                     HorizontalOptions="EndAndExpand"
+                                     HeightRequest="30" WidthRequest="30" />
                     </StackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>

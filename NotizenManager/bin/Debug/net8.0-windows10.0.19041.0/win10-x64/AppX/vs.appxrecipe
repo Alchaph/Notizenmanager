@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-QQINNO1</Machine>
+    <Machine>DESKTOP-KHH7JEP</Machine>
     <WindowsUser>micro</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -10,13 +10,13 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>com.companyname.notizenmanager</PackageIdentityName>
     <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath></WindowsSdkPath>
-    <LayoutDir>C:\Users\micro\local_repos\Notizenmanager\NotizenManager\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <LayoutDir>C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
     <RegisteredManifestChecksum>B28F0E20870AE815241229F2B910DEC18B7186CDEC0B684918A3096D668FAE8B</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>com.companyname.notizenmanager_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>com.companyname.notizenmanager_9zz4h110yvjzm!App</RegisteredUserModeAppID>
@@ -26,268 +26,280 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-01-01T11:07:43.517</Modified>
+      <Modified>2025-01-12T08:29:35.595</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-01-01T09:52:30.815</Modified>
+      <Modified>2025-01-12T07:36:31.680</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\NotizenManager.runtimeconfig.json">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\NotizenManager.runtimeconfig.json">
       <PackagePath>NotizenManager.runtimeconfig.json</PackagePath>
-      <Modified>2024-12-22T08:47:49.290</Modified>
+      <Modified>2025-01-11T08:42:08.280</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\NotizenManager.dll">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\NotizenManager.dll">
       <PackagePath>NotizenManager.dll</PackagePath>
-      <Modified>2025-01-01T11:07:42.890</Modified>
+      <Modified>2025-01-12T08:29:34.608</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>NotizenManager.exe</PackagePath>
-      <Modified>2025-01-01T11:07:42.906</Modified>
+      <Modified>2025-01-12T08:29:34.654</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\Resources\Raw\AboutAssets.txt">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
-      <Modified>2024-12-22T08:43:34.884</Modified>
+      <Modified>2025-01-02T10:10:48.255</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-12-22T08:47:45.744</Modified>
+      <Modified>2025-01-11T08:42:05.774</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-12-22T08:47:45.755</Modified>
+      <Modified>2025-01-11T08:42:05.788</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-12-22T08:47:45.770</Modified>
+      <Modified>2025-01-11T08:42:05.807</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-12-22T08:47:45.792</Modified>
+      <Modified>2025-01-11T08:42:05.832</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-12-22T08:47:45.876</Modified>
+      <Modified>2025-01-11T08:42:05.939</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2024-12-22T08:43:34.880</Modified>
+      <Modified>2025-01-02T10:10:48.255</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
-      <Modified>2024-12-22T08:43:34.882</Modified>
+      <Modified>2025-01-02T10:10:48.255</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-12-22T08:47:48.108</Modified>
+      <Modified>2025-01-12T07:36:30.055</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.099</Modified>
+      <Modified>2025-01-12T07:36:30.048</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.099</Modified>
+      <Modified>2025-01-12T07:36:30.048</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.099</Modified>
+      <Modified>2025-01-12T07:36:30.048</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.099</Modified>
+      <Modified>2025-01-12T07:36:30.047</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.098</Modified>
+      <Modified>2025-01-12T07:36:30.047</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.104</Modified>
+      <Modified>2025-01-12T07:36:30.053</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.104</Modified>
+      <Modified>2025-01-12T07:36:30.053</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.104</Modified>
+      <Modified>2025-01-12T07:36:30.051</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.104</Modified>
+      <Modified>2025-01-12T07:36:30.053</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.104</Modified>
+      <Modified>2025-01-12T07:36:30.051</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.105</Modified>
+      <Modified>2025-01-12T07:36:30.054</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.105</Modified>
+      <Modified>2025-01-12T07:36:30.054</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.105</Modified>
+      <Modified>2025-01-12T07:36:30.053</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.105</Modified>
+      <Modified>2025-01-12T07:36:30.053</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.105</Modified>
+      <Modified>2025-01-12T07:36:30.053</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.108</Modified>
+      <Modified>2025-01-12T07:36:30.055</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.107</Modified>
+      <Modified>2025-01-12T07:36:30.055</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.107</Modified>
+      <Modified>2025-01-12T07:36:30.055</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.107</Modified>
+      <Modified>2025-01-12T07:36:30.055</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.107</Modified>
+      <Modified>2025-01-12T07:36:30.055</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.107</Modified>
+      <Modified>2025-01-12T07:36:30.055</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.106</Modified>
+      <Modified>2025-01-12T07:36:30.054</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.106</Modified>
+      <Modified>2025-01-12T07:36:30.054</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.106</Modified>
+      <Modified>2025-01-12T07:36:30.054</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.106</Modified>
+      <Modified>2025-01-12T07:36:30.054</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.101</Modified>
+      <Modified>2025-01-12T07:36:30.049</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.101</Modified>
+      <Modified>2025-01-12T07:36:30.049</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.101</Modified>
+      <Modified>2025-01-12T07:36:30.049</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.101</Modified>
+      <Modified>2025-01-12T07:36:30.049</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.101</Modified>
+      <Modified>2025-01-12T07:36:30.049</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.102</Modified>
+      <Modified>2025-01-12T07:36:30.050</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.102</Modified>
+      <Modified>2025-01-12T07:36:30.050</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.102</Modified>
+      <Modified>2025-01-12T07:36:30.050</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.102</Modified>
+      <Modified>2025-01-12T07:36:30.050</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.102</Modified>
+      <Modified>2025-01-12T07:36:30.050</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.103</Modified>
+      <Modified>2025-01-12T07:36:30.051</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.103</Modified>
+      <Modified>2025-01-12T07:36:30.051</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.103</Modified>
+      <Modified>2025-01-12T07:36:30.051</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.103</Modified>
+      <Modified>2025-01-12T07:36:30.051</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.103</Modified>
+      <Modified>2025-01-12T07:36:30.050</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.100</Modified>
+      <Modified>2025-01-12T07:36:30.049</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.100</Modified>
+      <Modified>2025-01-12T07:36:30.048</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.100</Modified>
+      <Modified>2025-01-12T07:36:30.048</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.100</Modified>
+      <Modified>2025-01-12T07:36:30.048</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.100</Modified>
+      <Modified>2025-01-12T07:36:30.048</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\delete.scale-100.png">
+      <PackagePath>delete.scale-100.png</PackagePath>
+      <Modified>2025-01-12T07:36:30.057</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.109</Modified>
+      <Modified>2025-01-12T07:36:30.056</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.109</Modified>
+      <Modified>2025-01-12T07:36:30.056</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.108</Modified>
+      <Modified>2025-01-12T07:36:30.056</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.108</Modified>
+      <Modified>2025-01-12T07:36:30.056</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-12-22T08:47:48.108</Modified>
+      <Modified>2025-01-12T07:36:30.056</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\micro\local_repos\Notizenmanager\NotizenManager\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\NotizenManager.deps.json">
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit.scale-100.png">
+      <PackagePath>edit.scale-100.png</PackagePath>
+      <Modified>2025-01-12T07:36:30.057</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\pencil.scale-100.png">
+      <PackagePath>pencil.scale-100.png</PackagePath>
+      <Modified>2025-01-12T07:36:30.056</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\NotizenManager.deps.json">
       <PackagePath>NotizenManager.deps.json</PackagePath>
-      <Modified>2025-01-01T09:52:30.696</Modified>
+      <Modified>2025-01-12T07:29:56.972</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micro\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.54\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

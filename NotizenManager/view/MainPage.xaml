@@ -5,17 +5,17 @@
              x:Class="NotizenManager.MainPage"
              BackgroundColor="White">
     <VerticalStackLayout>
-        <Label
-            Text="Notizenmanager"
-            FontSize="30"
-            TextColor="White"
-            BackgroundColor="#7F00FF"
-            HeightRequest="50"
-            Padding="0"
-            Margin="0"
-            HorizontalOptions="Fill"
-            VerticalOptions="Center">
-        </Label>
+        <!-- <Label -->
+        <!--     Text="Notizenmanager" -->
+        <!--     FontSize="30" -->
+        <!--     TextColor="White" -->
+        <!--     BackgroundColor="#7F00FF" -->
+        <!--     HeightRequest="50" -->
+        <!--     Padding="0" -->
+        <!--     Margin="0" -->
+        <!--     HorizontalOptions="Fill" -->
+        <!--     VerticalOptions="Center"> -->
+        <!-- </Label> -->
         <Grid RowDefinitions="Auto, *" Padding="10">
             <StackLayout Grid.Row="1" Spacing="20">
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
@@ -29,12 +29,14 @@
                         <DataTemplate>
                             <Grid ColumnDefinitions="*, Auto, Auto" RowDefinitions="Auto, Auto" Padding="5" Margin="5">
                                 <Label Text="{Binding Name}" TextColor="Black" VerticalOptions="Center" Grid.Column="0" />
-                                <Button Text="Bearbeiten"
-                                        Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.EditCommand}"
-                                        CommandParameter="{Binding .}" Grid.Column="1" />
-                                <Button Text="Löschen" BackgroundColor="red" TextColor="White"
-                                        Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.DeleteCommand}"
-                                        CommandParameter="{Binding .}" Grid.Column="2" />
+                                <ImageButton Source="edit.png"
+                                             Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.EditCommand}"
+                                             CommandParameter="{Binding .}" Grid.Column="1"
+                                             HeightRequest="30" WidthRequest="30" />
+                                <ImageButton Source="delete.png" BackgroundColor="Transparent"
+                                             Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.DeleteCommand}"
+                                             CommandParameter="{Binding .}" Grid.Column="2"
+                                             HeightRequest="30" WidthRequest="30" />
                                 <BoxView Color="LightGray" HeightRequest="1" Grid.Row="1" Grid.ColumnSpan="3"
                                          HorizontalOptions="FillAndExpand" />
                             </Grid>

@@ -1,1 +1,1 @@
-C:\Users\micro\local_repos\Notizenmanager\NotizenManager\NotizenManager.csproj;x64
+C:\Users\micro\RiderProjects\Notizenmanager\NotizenManager\NotizenManager.csproj;x64

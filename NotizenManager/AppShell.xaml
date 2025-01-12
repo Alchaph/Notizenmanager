@@ -1,14 +1,27 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <Shell
     x:Class="NotizenManager.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:notizenManager="clr-namespace:NotizenManager"
-    Shell.FlyoutBehavior="Disabled"
-    Title="NotizenManager">
+    FlyoutIcon="pencil.png"
+    Shell.FlyoutBehavior="Flyout"
+    Shell.FlyoutBackgroundColor="White"
+    Shell.BackgroundColor="{StaticResource PrimaryColor}">
 
     <ShellContent
         ContentTemplate="{DataTemplate notizenManager:MainPage}"
-        Route="MainPage" />
-
+        Route="MainPage"
+        Title="Notizenmanager" />
+    <!-- <ShellContent -->
+    <!--         ContentTemplate="{DataTemplate notizenManager:SubjectView}" -->
+    <!--         Route="SubjectView" -->
+    <!--         Title="Notizenmanager" /> -->
+    <ShellContent
+        ContentTemplate="{DataTemplate notizenManager:FaqPage}"
+        Route="FaqPage"
+        Title="FAQ Seite" />
+    <ShellContent
+        ContentTemplate="{DataTemplate notizenManager:InfoPage}"
+        Route="InfoPage"
+        Title="Info Seite" />
 </Shell>

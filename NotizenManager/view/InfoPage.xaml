@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NotizenManager.InfoPage"
+             BackgroundColor="White"
+             Title="Info">
+    <StackLayout Padding="10">
+        <VerticalStackLayout Padding="20" Spacing="10">
+            <Image Source="pencil.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" />
+            <Label Text="Diese Applikation hilft ihnen beim Verwalten von Notizen."
+                   FontSize="18"
+                   TextColor="Black"
+                   HorizontalOptions="Start" />
+            <Label Text="Version: 1.0"
+                   FontSize="18"
+                   TextColor="Black"
+                   HorizontalOptions="Start" />
+            <Label Text="Entwickelt von: Marc Sutthaloung"
+                   FontSize="18"
+                   TextColor="Black"
+                   HorizontalOptions="Start" />
+            <Label Text="Gefällt Ihnen die App? Lass es mich wissen!"
+                   FontSize="18"
+                   TextColor="Black"
+                   HorizontalOptions="Start" />
+            <Slider x:Name="ratingSlider" Minimum="1" Maximum="10" Value="5" HorizontalOptions="FillAndExpand" />
+            <Label Text="{Binding Source={x:Reference ratingSlider}, Path=Value, StringFormat='Bewertung: {0:F0}'}"
+                   FontSize="18"
+                   TextColor="Black" />
+            <Button Text="Send" Clicked="OnSendButtonClicked" BackgroundColor="#5A35CC" TextColor="White" />
+            <Label Text="Meine GitHub Repositories" FontSize="18" TextColor="Blue" HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnGitHubLinkTapped" />
+                </Label.GestureRecognizers>
+            </Label>
+        </VerticalStackLayout>
+    </StackLayout>
+</ContentPage>

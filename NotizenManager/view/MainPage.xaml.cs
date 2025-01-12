@@ -37,16 +37,21 @@ namespace NotizenManager
         {
             if (e.CurrentSelection.FirstOrDefault() is Subject selectedSubject)
             {
+                ((CollectionView)sender).SelectedItem = null;
                 await Navigation.PushModalAsync(new SubjectView(selectedSubject));
             }
         }
 
         private async void OnEdit(Subject subject)
         {
-            string newName = await DisplayPromptAsync("Edit Subject", "Enter new name:", initialValue: subject.Name);
+            string newName = await DisplayPromptAsync("Fachname ändern", "Geben sie den neuen Namen ein", initialValue: subject.Name);
             if (!string.IsNullOrWhiteSpace(newName))
             {
                 subject.Name = newName;
+            }
+            else
+            {
+                await DisplayAlert("Error", "Der Fachname darf nicht leer sein", "OK");
             }
         }
 

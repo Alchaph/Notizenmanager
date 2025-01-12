@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NotizenManager.FaqPage"
+             BackgroundColor="White"
+             Title="FAQ">
+    <StackLayout Padding="10">
+        <Label Text="Häufig gestellte Fragen" FontAttributes="Bold" FontSize="24" TextColor="Black" />
+
+        <StackLayout>
+            <Label Text="Q: Wie füge ich eine neue Notiz hinzu? ↓" FontAttributes="Bold" FontSize="18" TextColor="Black">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnQuestionTapped" CommandParameter="0" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label x:Name="Answer0" Text="A: Um eine neue Notiz hinzuzufügen, gehen Sie zur Notizenübersicht des Fachs und klicken Sie auf die Schaltfläche 'Notiz hinzufügen'." FontSize="16" TextColor="Black" IsVisible="False" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="Q: Wie bearbeite ich eine vorhandene Notiz? ↓" FontAttributes="Bold" FontSize="18" TextColor="Black">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnQuestionTapped" CommandParameter="1" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label x:Name="Answer1" Text="A: Um eine vorhandene Notiz zu bearbeiten, wählen Sie die Notiz aus, die Sie bearbeiten möchten, und klicken Sie auf die Schaltfläche 'Bearbeiten'." FontSize="16" TextColor="Black" IsVisible="False" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="Q: Wie lösche ich eine Notiz? ↓" FontAttributes="Bold" FontSize="18" TextColor="Black">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnQuestionTapped" CommandParameter="2" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label x:Name="Answer2" Text="A: Um eine Notiz zu löschen, wählen Sie die Notiz aus, die Sie löschen möchten, und klicken Sie auf die Schaltfläche 'Löschen'." FontSize="16" TextColor="Black" IsVisible="False" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="Q: Wie suche ich nach einer Notiz? ↓" FontAttributes="Bold" FontSize="18" TextColor="Black">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnQuestionTapped" CommandParameter="3" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label x:Name="Answer3" Text="A: Um nach einer Notiz zu suchen, verwenden Sie die Suchleiste oben auf der Notizenübersicht des Fachs." FontSize="16" TextColor="Black" IsVisible="False" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="Q: Wie ändere ich die App-Einstellungen? ↓" FontAttributes="Bold" FontSize="18" TextColor="Black">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnQuestionTapped" CommandParameter="4" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label x:Name="Answer4" Text="A: Um die App-Einstellungen zu ändern, gehen Sie zur Einstellungsseite im Hauptmenü." FontSize="16" TextColor="Black" IsVisible="False" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
