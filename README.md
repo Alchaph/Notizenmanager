@@ -1,8 +1,8 @@
 how to start this app
 
-```git clone git@github.com:Alchaph/Notizenmanager.git```
+```git clone https://github.com/Alchaph/Notizenmanager.git```
 
-```cd Notizenmanager```
+```cd Notizenmanager/Notizenmanager```
 
 ```rm -rf bin obj```
 
